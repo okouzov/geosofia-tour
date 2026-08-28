@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 330" width="2000" height="330" role="img" aria-label="GeoSofia 2026 — 3D GeoInfo, Smart Data and Smart Cities, LADM and 3D LA. 28th September to 2nd October 2026, Sofia, Bulgaria.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#E4531C"/>
+      <stop offset="18%"  stop-color="#EE7A18"/>
+      <stop offset="38%"  stop-color="#F3A81B"/>
+      <stop offset="58%"  stop-color="#E9B93C"/>
+      <stop offset="78%"  stop-color="#8FB878"/>
+      <stop offset="100%" stop-color="#3FA79C"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity=".10"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="2000" height="330" fill="url(#bg)"/>
+  <rect width="2000" height="330" fill="url(#sheen)"/>
+
+  <!-- decorative circle cluster -->
+  <g>
+    <circle cx="372" cy="108" r="58"  fill="#F07C2A" opacity=".85"/>
+    <circle cx="352" cy="60"  r="52"  fill="none" stroke="#F6A85C" stroke-width="4" opacity=".75"/>
+    <circle cx="497" cy="176" r="76"  fill="#5AA79B" opacity=".72"/>
+    <circle cx="392" cy="214" r="94"  fill="#F2A32B" opacity=".82"/>
+    <circle cx="330" cy="182" r="44"  fill="#EE8A33" opacity=".55"/>
+    <path d="M462 300 a72 72 0 1 1 96 -66" fill="none" stroke="#3E9E93" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+    <g fill="#FFE9B8" opacity=".9">
+      <circle cx="258" cy="292" r="3.4"/><circle cx="274" cy="284" r="3.4"/><circle cx="290" cy="276" r="3.4"/>
+      <circle cx="306" cy="268" r="3.4"/><circle cx="322" cy="260" r="3.4"/><circle cx="338" cy="252" r="3.4"/>
+      <circle cx="268" cy="308" r="3.4"/><circle cx="284" cy="300" r="3.4"/><circle cx="300" cy="292" r="3.4"/>
+      <circle cx="316" cy="284" r="3.4"/><circle cx="332" cy="276" r="3.4"/><circle cx="348" cy="268" r="3.4"/>
+      <circle cx="248" cy="276" r="3.4"/><circle cx="264" cy="268" r="3.4"/><circle cx="280" cy="260" r="3.4"/>
+      <circle cx="296" cy="252" r="3.4"/><circle cx="312" cy="244" r="3.4"/>
+    </g>
+  </g>
+
+  <g fill="#ffffff" font-family="'Lato','Segoe UI',Corbel,Candara,'Trebuchet MS',sans-serif" font-weight="300">
+    <text x="28" y="238" font-size="54" letter-spacing="1">#GEOSOFIA2026</text>
+    <text x="1218" y="132" font-size="100" text-anchor="middle" letter-spacing="1">GeoSofia 2026</text>
+    <text x="1218" y="236" font-size="52" text-anchor="middle">3D GeoInfo | Smart Data and Smart Cities | LADM &amp; 3D LA</text>
+    <text x="1218" y="308" font-size="52" text-anchor="middle">28th September - 2nd October 2026 | Sofia, Bulgaria</text>
+  </g>
+</svg>

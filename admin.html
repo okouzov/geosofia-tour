@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Administration — GeoSofia Sightseeing Tour</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/geosofia-banner.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="demo-bar" id="demoBar">
+  DEMO MODE — no backend connected yet. Records shown here live in this browser only. See README.md.
+</div>
+
+<!-- ================= LOGIN ================= -->
+<div id="loginView">
+  <header class="banner">
+    <img src="assets/img/banner.png"
+         onerror="this.onerror=null;this.src='assets/img/geosofia-banner.svg';"
+         alt="GeoSofia 2026">
+  </header>
+
+  <div class="wrap login">
+    <div class="card">
+      <div class="lock" aria-hidden="true">🔒</div>
+      <h2>Organiser access</h2>
+      <p class="sub">GeoSofia Sightseeing Tour — registration administration.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field" id="wrap-pwd">
+          <label for="f-pwd">Password <span class="req">*</span></label>
+          <input type="password" id="f-pwd" autocomplete="current-password" placeholder="Enter administration password" required>
+          <p class="error" id="err-pwd">Wrong password. Please try again.</p>
+        </div>
+        <div class="actions" style="border-top:0;padding-top:4px;margin-top:8px">
+          <button type="submit" class="btn teal" id="loginBtn"><span id="loginLabel">Sign in</span></button>
+          <span class="note"><a href="index.html">← Back to the registration form</a></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PANEL ================= -->
+<div id="panelView" style="display:none">
+
+  <header class="admin-top">
+    <div class="wrap-wide">
+      <button type="button" class="btn danger sm" id="resetBtn">Reset All Data</button>
+      <div class="brand">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>
+          <strong>GeoSofia Sightseeing Tour</strong>
+          <span>Registration administration</span>
+        </span>
+        <button type="button" class="btn ghost sm" id="logoutBtn" style="margin-left:12px">Sign out</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap-wide admin-body">
+
+    <div class="stats" id="stats"></div>
+
+    <div class="toolbar">
+      <input type="search" class="search" id="search" placeholder="Search name, affiliation, e-mail or ID…" aria-label="Search registrations">
+      <button type="button" class="btn ghost sm" id="refreshBtn">Refresh</button>
+      <button type="button" class="btn teal sm" id="csvBtn">Export CSV</button>
+      <button type="button" class="btn teal sm" id="xlsBtn">Export Excel</button>
+    </div>
+
+    <div class="table-wrap">
+      <table id="table">
+        <thead>
+          <tr>
+            <th class="num" scope="col">#</th>
+            <th scope="col" data-key="name"        aria-sort="none">First and Last Name <span class="arrow">▲</span></th>
+            <th scope="col" data-key="affiliation" aria-sort="none">Affiliation <span class="arrow">▲</span></th>
+            <th scope="col" data-key="email"       aria-sort="none">email <span class="arrow">▲</span></th>
+            <th scope="col" data-key="conftool"    aria-sort="none">ConfTool Participant ID <span class="arrow">▲</span></th>
+            <th scope="col" data-key="slot"        aria-sort="none">Date <span class="arrow">▲</span></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="empty" id="emptyState" style="display:none">
+        <div class="big" aria-hidden="true">🗒️</div>
+        <p id="emptyText">No registrations yet.</p>
+      </div>
+    </div>
+
+    <p class="hint" style="margin-top:14px" id="footNote"></p>
+  </main>
+</div>
+
+<!-- ================= RESET CONFIRM ================= -->
+<div class="overlay" id="resetOverlay" role="dialog" aria-modal="true" aria-labelledby="resetTitle">
+  <div class="modal">
+    <div class="warn-ico" aria-hidden="true">⚠️</div>
+    <h3 id="resetTitle">Are You sure that you want to delete all records?</h3>
+    <p>This permanently removes <strong id="resetCount">all records</strong> from the database and frees every tour slot. This action cannot be undone.</p>
+    <p style="font-size:.88rem;color:var(--muted)">Tip: export the data first, so you keep a copy.</p>
+    <div class="modal-actions">
+      <button type="button" class="btn ghost sm" id="resetCancel">Cancel</button>
+      <button type="button" class="btn danger sm" id="resetConfirm"><span id="resetConfirmLabel">Yes, delete everything</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/admin.js"></script>
+</body>
+</html>

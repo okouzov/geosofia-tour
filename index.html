@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeoSofia Sightseeing Tour — Registration | GeoSofia 2026</title>
+<meta name="description" content="Register for the GeoSofia Sightseeing Tour, a guided evening walk through the heart of Sofia for participants of GeoSofia 2026.">
+<link rel="icon" href="assets/img/geosofia-banner.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="demo-bar" id="demoBar">
+  DEMO MODE — no backend connected yet. Registrations are stored in this browser only and no e-mail is sent. See README.md.
+</div>
+
+<header class="banner">
+  <img src="assets/img/banner.png"
+       onerror="this.onerror=null;this.src='assets/img/geosofia-banner.svg';"
+       alt="GeoSofia 2026 — 3D GeoInfo | Smart Data and Smart Cities | LADM &amp; 3D LA — 28th September to 2nd October 2026, Sofia, Bulgaria">
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <span class="eyebrow"><span class="dot"></span> Social programme · GeoSofia 2026</span>
+    <h1>GeoSofia Sightseeing Tour</h1>
+    <p class="lede">
+      Join a two-hour guided evening walk through the historic centre of Sofia — Roman remains,
+      golden domes and the layers of a city that has been lived in for seven thousand years.
+      Free of charge for conference participants, but places are limited to
+      <strong>25 people per evening</strong>.
+    </p>
+
+    <!-- ---------- tourism animation ---------- -->
+    <div class="tour-anim" role="img" aria-label="Animation of a guided walking tour passing the landmarks of Sofia">
+      <svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <g id="ridge">
+            <path d="M0 200 L70 150 L120 176 L190 122 L268 178 L330 148 L400 200 Z"/>
+            <path d="M380 200 L450 138 L520 180 L590 132 L660 178 L730 146 L800 200 Z"/>
+            <path d="M760 200 L830 154 L900 200 Z"/>
+          </g>
+
+          <g id="skyline">
+            <!-- Alexander Nevsky Cathedral -->
+            <path d="M100 212 V168 H250 V212 Z"/>
+            <path d="M102 168 A16 16 0 0 1 134 168 Z"/>
+            <path d="M216 168 A16 16 0 0 1 248 168 Z"/>
+            <path d="M155 122 H197 V168 H155 Z"/>
+            <path d="M155 122 Q176 86 197 122 Z"/>
+            <path d="M174 86 h4 v-12 h-4 Z M170 78 h12 v3 h-12 Z"/>
+            <path d="M104 136 h26 v32 h-26 Z"/>
+            <path d="M104 136 Q117 114 130 136 Z"/>
+            <!-- Monument to St Sofia -->
+            <path d="M330 212 h34 v-9 h-34 Z M340 203 v-52 h14 v52 Z"/>
+            <circle cx="347" cy="141" r="8"/>
+            <path d="M336 152 l-14 -14 3 -3 14 14 Z M358 152 l14 -14 -3 -3 -14 14 Z"/>
+            <!-- Rotunda of St George -->
+            <path d="M410 212 v-32 h54 v32 Z"/>
+            <path d="M410 180 Q437 148 464 180 Z"/>
+            <path d="M435 148 h4 v-10 h-4 Z"/>
+            <!-- modern district -->
+            <path d="M508 212 v-40 l52 -22 l52 22 v40 Z"/>
+            <!-- Ivan Vazov National Theatre -->
+            <path d="M650 212 v-42 h116 v42 Z"/>
+            <path d="M644 170 L708 140 L772 170 Z"/>
+            <path d="M662 212 v-40 h7 v40 Z M686 212 v-40 h7 v40 Z M710 212 v-40 h7 v40 Z M734 212 v-40 h7 v40 Z"/>
+            <!-- tower block -->
+            <path d="M812 212 v-96 h34 v96 Z"/>
+            <path d="M827 116 h4 v-30 h-4 Z"/>
+          </g>
+
+          <g id="tourist">
+            <circle cx="0" cy="-36" r="6.4"/>
+            <path d="M0 -29 V-14" stroke-width="7.5" stroke-linecap="round" fill="none"/>
+          </g>
+        </defs>
+
+        <!-- sun -->
+        <circle class="sun" cx="762" cy="56" r="30" fill="#F6C459" opacity=".7"/>
+        <circle class="sun" cx="762" cy="56" r="46" fill="#F6C459" opacity=".22"/>
+
+        <!-- birds -->
+        <g class="bird" fill="none" stroke="#B4703A" stroke-width="2.4" stroke-linecap="round" opacity=".55">
+          <path d="M120 70 q9 -8 18 0 q9 -8 18 0"/>
+        </g>
+        <g class="bird b2" fill="none" stroke="#B4703A" stroke-width="2" stroke-linecap="round" opacity=".4">
+          <path d="M60 108 q7 -6 14 0 q7 -6 14 0"/>
+        </g>
+
+        <!-- distant ridge (Vitosha) -->
+        <g fill="#6FA39C" opacity=".30">
+          <g class="sky-layer slow">
+            <use href="#ridge"/>
+            <use href="#ridge" x="900"/>
+          </g>
+        </g>
+
+        <!-- landmark skyline -->
+        <g fill="#C4671F" opacity=".42">
+          <g class="sky-layer">
+            <use href="#skyline"/>
+            <use href="#skyline" x="900"/>
+          </g>
+        </g>
+
+        <!-- ground -->
+        <rect x="0" y="210" width="900" height="50" fill="#EBBF80" opacity=".55"/>
+        <path d="M0 212 H900" stroke="#C98F4A" stroke-width="2" opacity=".5"/>
+
+        <!-- walking route -->
+        <path class="route" d="M30 232 C 220 224, 430 240, 870 230"
+              fill="none" stroke="#C6401D" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+
+        <!-- destination pin -->
+        <g transform="translate(806,206)">
+          <circle class="ping" cx="0" cy="4" r="5" fill="#3FA79C"/>
+          <g class="pin">
+            <path d="M0 4 C-13 -12 -18 -20 -18 -28 A18 18 0 0 1 18 -28 C18 -20 13 -12 0 4 Z" fill="#E4531C"/>
+            <circle cx="0" cy="-28" r="6.6" fill="#FFF3E0"/>
+          </g>
+        </g>
+
+        <!-- the tour group -->
+        <g class="walker">
+          <g class="walker-bob" transform="translate(0,210)">
+            <!-- guide with flag -->
+            <g stroke="#6B3A1C" fill="#6B3A1C">
+              <path d="M0 -30 V-64" stroke-width="2.6" stroke-linecap="round"/>
+              <path d="M1 -63 L26 -56 L1 -49 Z" fill="#3FA79C" stroke="none"/>
+              <use href="#tourist" stroke="#6B3A1C"/>
+              <path class="leg-a" d="M0 -14 L0 0" stroke-width="5.5" stroke-linecap="round" style="transform-origin:0px -14px"/>
+              <path class="leg-b" d="M0 -14 L0 0" stroke-width="5.5" stroke-linecap="round" style="transform-origin:0px -14px"/>
+              <path d="M0 -26 L-9 -30" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+            </g>
+            <!-- tourist with backpack -->
+            <g transform="translate(30,0)" stroke="#8A4A24" fill="#8A4A24">
+              <use href="#tourist" stroke="#8A4A24"/>
+              <path d="M-6 -27 h5 v11 h-5 Z" stroke="none" fill="#E4531C" opacity=".85"/>
+              <path class="leg-b" d="M0 -14 L0 0" stroke-width="5.5" stroke-linecap="round" style="transform-origin:0px -14px"/>
+              <path class="leg-a" d="M0 -14 L0 0" stroke-width="5.5" stroke-linecap="round" style="transform-origin:0px -14px"/>
+            </g>
+            <!-- tourist taking a photo -->
+            <g transform="translate(58,0)" stroke="#A05A2C" fill="#A05A2C">
+              <use href="#tourist" stroke="#A05A2C"/>
+              <path d="M0 -27 L11 -31" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+              <rect x="9" y="-36" width="11" height="8" rx="1.6" stroke="none" fill="#3FA79C"/>
+              <path class="leg-a" d="M0 -14 L0 0" stroke-width="5.5" stroke-linecap="round" style="transform-origin:0px -14px"/>
+              <path class="leg-b" d="M0 -14 L0 0" stroke-width="5.5" stroke-linecap="round" style="transform-origin:0px -14px"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ---------- registration form ---------- -->
+  <section class="card">
+
+    <div id="formPane">
+      <h2>Register for the tour</h2>
+      <p class="sub">All fields marked with <span class="req">*</span> are required.</p>
+
+      <form id="regForm" novalidate autocomplete="on">
+
+        <div class="grid2">
+          <div class="field" id="wrap-name">
+            <label for="f-name">First and Last Name <span class="req">*</span></label>
+            <input type="text" id="f-name" name="name" placeholder="e.g. Maria Petrova"
+                   autocomplete="name" maxlength="120" required>
+            <p class="error" id="err-name">Please enter your first and last name.</p>
+          </div>
+
+          <div class="field" id="wrap-affiliation">
+            <label for="f-affiliation">Affiliation <span class="req">*</span></label>
+            <input type="text" id="f-affiliation" name="affiliation" placeholder="University, company or institute"
+                   autocomplete="organization" maxlength="160" required>
+            <p class="error" id="err-affiliation">Please enter your affiliation.</p>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <div class="field" id="wrap-email">
+            <label for="f-email">E-mail <span class="req">*</span></label>
+            <input type="email" id="f-email" name="email" placeholder="name@institution.org"
+                   autocomplete="email" maxlength="160" required>
+            <p class="hint">The tour details will be sent to this address.</p>
+            <p class="error" id="err-email">Please enter a valid e-mail address.</p>
+          </div>
+
+          <div class="field" id="wrap-conftool">
+            <label for="f-conftool">ConfTool Participant ID <span class="req">*</span></label>
+            <input type="text" id="f-conftool" name="conftool" placeholder="e.g. 1042"
+                   maxlength="40" required>
+            <p class="hint">Shown in your ConfTool registration confirmation.</p>
+            <p class="error" id="err-conftool">Please enter your ConfTool Participant ID.</p>
+          </div>
+        </div>
+
+        <fieldset id="wrap-slot">
+          <legend>Choose your tour date <span class="req">*</span></legend>
+          <div class="slots" id="slots" role="radiogroup" aria-label="Tour date">
+            <!-- built by form.js -->
+          </div>
+          <p class="error" id="err-slot" style="margin-top:10px">Please choose one of the available dates.</p>
+        </fieldset>
+
+        <div class="msg err" id="formMsg" role="alert" aria-live="assertive">
+          <span class="ico" aria-hidden="true">!</span><span id="formMsgText"></span>
+        </div>
+
+        <div class="actions">
+          <button type="submit" class="btn" id="submitBtn">
+            <span id="submitLabel">Submit registration</span>
+          </button>
+          <span class="note">You will receive a confirmation e-mail with the meeting point and your guide.</span>
+        </div>
+      </form>
+    </div>
+
+    <!-- ---------- success ---------- -->
+    <div class="success" id="successPane" role="status" aria-live="polite">
+      <svg class="check" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <circle cx="50" cy="50" r="38" stroke="#3FA79C" stroke-width="6" stroke-linecap="round"/>
+        <path d="M32 51 L45 64 L69 39" stroke="#3FA79C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2>Thank you for your registration, trip details will be sent to your e-mail!</h2>
+      <p id="successNote">A confirmation with the meeting point and your guide is on its way.</p>
+      <div class="recap">
+        <dl>
+          <div class="row"><dt>Name</dt><dd id="r-name"></dd></div>
+          <div class="row"><dt>Affiliation</dt><dd id="r-affiliation"></dd></div>
+          <div class="row"><dt>E-mail</dt><dd id="r-email"></dd></div>
+          <div class="row"><dt>ConfTool ID</dt><dd id="r-conftool"></dd></div>
+          <div class="row"><dt>Tour date</dt><dd id="r-slot"></dd></div>
+          <div class="row"><dt>Your guide</dt><dd id="r-guide"></dd></div>
+        </dl>
+      </div>
+      <div class="actions" style="justify-content:center">
+        <button type="button" class="btn ghost" id="againBtn">Register another participant</button>
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>GeoSofia 2026 · 28 September – 2 October 2026 · Sofia, Bulgaria</p>
+    <p><a href="admin.html">Organiser access</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/form.js"></script>
+</body>
+</html>

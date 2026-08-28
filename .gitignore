@@ -1,0 +1,8 @@
+# The Apps Script backend contains the administration password in clear text
+# (var ADMIN_PASSWORD = '...'). Publishing it would let anyone download the
+# participant list. The deployed copy already lives in the institute's Google
+# account, so this file is only a local backup.
+#
+# If this repository is PRIVATE, you may delete this .gitignore and commit the
+# backend as well.
+backend/
