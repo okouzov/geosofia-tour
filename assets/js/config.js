@@ -39,7 +39,7 @@ const CONFIG = {
     "01oct": { name: "Nikolay Mindov",  phone: "+ 359 883 605 747", email: "nikimindov@gmail.com" }
   },
 
-  MEETING_POINT_URL: "https://maps.app.goo.gl/ijDjo2xJdTiX9UHW6"
+  MEETING_POINT_URL: "https://maps.app.goo.gl/L1sayGPZ3ZN9Q9696"
 };
 
 CONFIG.isConfigured = function () {
