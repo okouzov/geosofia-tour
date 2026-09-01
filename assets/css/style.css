@@ -82,7 +82,7 @@ h1{
 }
 /* Each sentence is its own block: tight leading inside a sentence that wraps,
    the original, roomier gap kept between the sentences. */
-.lede{max-width:680px;margin:0 auto;color:var(--ink-soft);font-size:1.06rem;text-align:left;line-height:1.38}
+.lede{max-width:900px;margin:0 auto;color:var(--ink-soft);font-size:1.06rem;text-align:left;line-height:1.38}
 .lede span{display:block}
 .lede span + span{margin-top:13px}
 .lede strong{font-weight:700;color:var(--ink)}
@@ -90,7 +90,7 @@ h1{
 
 /* quick facts about the tour */
 .facts{
-  list-style:none;max-width:680px;margin:18px auto 0;padding:0;
+  list-style:none;max-width:900px;margin:18px auto 0;padding:0;
   text-align:left;font-size:1.06rem;line-height:1.38;color:var(--ink-soft);
 }
 .facts li{display:flex;align-items:flex-start;gap:10px}
