@@ -80,7 +80,11 @@ h1{
   background:linear-gradient(96deg,var(--orange) 0%,var(--amber) 45%,var(--teal) 100%);
   -webkit-background-clip:text;background-clip:text;color:transparent;
 }
-.lede{max-width:680px;margin:0 auto;color:var(--ink-soft);font-size:1.06rem;text-align:left}
+/* Each sentence is its own block: tight leading inside a sentence that wraps,
+   the original, roomier gap kept between the sentences. */
+.lede{max-width:680px;margin:0 auto;color:var(--ink-soft);font-size:1.06rem;text-align:left;line-height:1.38}
+.lede span{display:block}
+.lede span + span{margin-top:5px}
 
 /* ---------- tourism animation ---------- */
 .tour-anim{
