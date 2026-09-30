@@ -26,9 +26,9 @@ const CONFIG = {
      `date` is what is written into the Date column of the database,
      of the admin table and of the CSV / Excel export. */
   SLOTS: [
-    { key: "29sep", date: "29 Sep", display: "29 Sept", time: "18:00 - 19:00", label: "29 Sept 18:00-19:00", full: "Tuesday, 29 September 2026" },
-    { key: "30sep", date: "30 Sep", display: "30 Sept", time: "18:00 - 19:00", label: "30 Sept 18:00-19:00", full: "Wednesday, 30 September 2026" },
-    { key: "01oct", date: "01 Oct", display: "01 Oct",  time: "18:00 - 19:00", label: "01 Oct 18:00-19:00",  full: "Thursday, 1 October 2026" }
+    { key: "29sep", date: "29 Sep", display: "29 Sept", time: "18:30 - 19:30", label: "29 Sept 18:30-19:30", full: "Tuesday, 29 September 2026" },
+    { key: "30sep", date: "30 Sep", display: "30 Sept", time: "18:30 - 19:30", label: "30 Sept 18:30-19:30", full: "Wednesday, 30 September 2026" },
+    { key: "01oct", date: "01 Oct", display: "01 Oct",  time: "18:30 - 19:30", label: "01 Oct 18:30-19:30",  full: "Thursday, 1 October 2026" }
   ],
 
   /* Guides. 29 Sept + 01 Oct -> Nikolay Mindov; 30 Sept -> Petya Angelova.
