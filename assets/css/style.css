@@ -276,6 +276,15 @@ legend{font-weight:700;font-size:.9rem;margin-bottom:10px;padding:0;color:var(--
 .recap dd{margin:0;font-weight:700;text-align:right;word-break:break-word}
 .recap dl{margin:0}
 
+/* registration closed */
+.closed{display:none;text-align:center;padding:14px 0 6px}
+.closed.show{display:block}
+.closed-mark{width:78px;height:78px;margin:0 auto 22px}
+.closed h2{font-size:1.5rem;margin:0 0 14px}
+.closed p{color:var(--ink-soft);max-width:540px;margin:0 auto 12px}
+.closed strong{color:var(--ink);font-weight:700}
+.closed .closed-sign{margin-top:20px;color:var(--ink);font-weight:700}
+
 /* ---------- footer ---------- */
 footer{border-top:1px solid var(--line);background:rgba(255,255,255,.6);padding:26px 0 34px;margin-top:auto}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}

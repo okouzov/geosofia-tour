@@ -252,6 +252,17 @@
   /* ---------------- boot ---------------- */
 
   if (API.demoMode()) els.demoBar.classList.add("show");
+
+  /* Registration closed: show the closing notice instead of the form and
+     stop talking to the server altogether. */
+  if (CONFIG.REGISTRATION_OPEN === false) {
+    els.formPane.style.display = "none";
+    const selectLine = $("selectLine");
+    if (selectLine) selectLine.style.display = "none";
+    $("closedPane").classList.add("show");
+    return;
+  }
+
   buildSlots();
   loadStats(false);
 

@@ -19,6 +19,12 @@ const CONFIG = {
      Looks like: https://script.google.com/macros/s/AKfy..../exec   */
   API_URL: "https://script.google.com/macros/s/AKfycbwknvsMkedSz2sMLijtkJkOhgMNULbt2RwMKi-mkO9AMBEUHuDeE4GxaHGK3-h-Dok/exec",
 
+  /* Registration switch.
+     false -> the form is replaced by a "Registration is closed" message.
+     Set it back to true (and in Code.gs) to reopen. The admin panel,
+     the database and the exports keep working either way. */
+  REGISTRATION_OPEN: false,
+
   /* Maximum participants per tour slot. Must match CAPACITY in Code.gs */
   CAPACITY: 25,
 

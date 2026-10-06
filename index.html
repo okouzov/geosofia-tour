@@ -43,7 +43,7 @@
       <li><span class="ico" aria-hidden="true">👥</span><span>Places are limited – advance registration is required.</span></li>
     </ul>
 
-    <p class="lede closing"><span><strong>Select your preferred date below to join the tour.</strong></span></p>
+    <p class="lede closing" id="selectLine"><span><strong>Select your preferred date below to join the tour.</strong></span></p>
 
     <!-- ---------- tourism animation ---------- -->
     <div class="tour-anim" role="img" aria-label="Animation of a guided walking tour passing the landmarks of Sofia">
@@ -253,6 +253,20 @@
       <div class="actions" style="justify-content:center">
         <button type="button" class="btn ghost" id="againBtn">Register another participant</button>
       </div>
+    </div>
+
+    <!-- ---------- registration closed ---------- -->
+    <div class="closed" id="closedPane" role="status">
+      <svg class="closed-mark" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <circle cx="50" cy="50" r="38" stroke="#3FA79C" stroke-width="6"/>
+        <path d="M32 51 L45 64 L69 39" stroke="#3FA79C" stroke-width="7"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h2>Registration is closed</h2>
+      <p>The GeoSofia Sightseeing Tour has taken place and registration is no longer open.</p>
+      <p>Thank you to everyone who walked through Sofia with us — and to
+        <strong>Visit Sofia | Sofia Tourism Administration</strong> for making the tour possible.</p>
+      <p class="closed-sign">The GeoSofia 2026 organising team</p>
     </div>
 
   </section>
